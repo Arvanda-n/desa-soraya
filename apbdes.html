@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Infografis Desa Soraya</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="full.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body style="padding-top: 50px;">
+
+   <!-- Navbar -->
+ <div class="navbar-no">
+    <div class="navbar-logo-home">
+      <img src="assets/LOGO FINAL.png" alt="Logo" />
+    </div>
+    <div class="navbar-menu-home">
+      <a href="home.html" >Home</a> |
+
+      <div class="dropdown d-inline">
+        <a class="nav-link dropdown-toggle"  href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Informasi
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="infografis.html">Infografis</a></li>
+          <li><a class="dropdown-item" href="ppid.html">PPID</a></li>
+        </ul>
+      </div>
+
+      <a href="Profil Desaa.html">Profil Desa</a> |
+      <a href="berita list.html">Berita</a> |
+
+      <!-- Tambahan Dropdown Avatar -->
+      <div class="dropdown d-inline">
+        <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <img src="assets/profile.png" alt="User" width="40" height="40" class="rounded-circle" id="userAvatar">
+        </a>
+        <ul class="dropdown-menu dropdown-menu-end">
+          <li id="loginOption"><a class="dropdown-item" href="login.html">Login</a></li>
+          <li id="registerOption"><a class="dropdown-item" href="registrasi.html">Register</a></li>
+          <li id="profileOption" class="d-none"><a class="dropdown-item" href="pengaduan.html">Profile</a></li>
+          <li id="logoutOption" class="d-none"><a class="dropdown-item" href="#">Logout</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+  <!-- Judul -->
+  <section class="section">
+    <div class="left">
+      <h1>INFOGRAFIS<br>DESA SORAYA</h1>
+    </div>
+    <div class="menu-kanan">
+        <div class="menu-item">
+            <a href="Infografis.html"> 
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="rgb(47, 75, 47)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                        <path d="M16 3.128a4 4 0 0 1 0 7.744"/>
+                        <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+                        <circle cx="9" cy="7" r="4"/>
+                    </svg>
+                <div>Penduduk</div>
+            </a>
+        </div>
+        <div class="menu-item active">
+            <a href="apbdes.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="rgb(47, 75, 47)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect width="20" height="12" x="2" y="6" rx="2"/>
+                    <circle cx="12" cy="12" r="2"/>
+                    <path d="M6 12h.01M18 12h.01"/>
+                </svg>
+                <div>APBDes</div>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="bansos.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="rgb(47, 75, 47)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z"/>
+                    <path d="M12 22V12"/>
+                    <polyline points="3.29 7 12 12 20.71 7"/>
+                    <path d="m7.5 4.27 9 5.15"/>
+                </svg>
+                <div>Bansos</div>
+            </a>
+        </div>
+    </div>
+  </section>
+  
+  <section class="apb-container">
+    <div class="judul">
+      <h2>APB Desa Soraya Tahun 2025</h2>
+      <p>Desa Soraya, Jalan Sultan Hasanuddin KM. 1, Kecamatan Pakis, Kabupaten Kinasih, Provinsi Jawa Utara, 56111<br>
+        Anggaran Pendapatan dan Belanja Desa ini disajikan secara transparan untuk memberi informasi kepada masyarakat tentang pengelolaan keuangan Desa Soraya pada tahun 2025.
+      </p>
+    </div>
+    <div class="apb-wrapper">
+      <div class="col">
+        <div class="apb-card">
+          <div class="icon up"></div>
+          <div>
+            <p class="label">Pendapatan</p>
+            <p class="jumlah">Rp2.561.030.600,00</p>
+          </div>
+        </div>
+        <div class="apb-card">
+          <div class="icon up"></div>
+          <div>
+            <p class="label">Penerimaan</p>
+            <p class="jumlah">Rp9.215.147,00</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="apb-card">
+          <div class="icon circle"></div>
+          <div>
+            <p class="label">Belanja</p>
+            <p class="jumlah">Rp0,00</p>
+          </div>
+        </div>
+        <div class="apb-card">
+          <div class="icon circle"></div>
+          <div>
+            <p class="label">Pengeluaran</p>
+            <p class="jumlah">Rp0,00</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="total">
+      <p><strong>Surplus/Defisit</strong> <span>Rp2.570.245.747,00</span></p>
+    </div>
+  </section>
+
+  <section class="chart-section">
+    <h2>Pendapatan dan Belanja Desa dari Tahun ke Tahun</h2>
+    <canvas id="chartTahunan" width="400" height="200"></canvas>
+  </section>
+
+  <section class="chart-section">
+    <h2>Pendapatan Desa 2025</h2>
+    <canvas id="chartPendapatan" width="400" height="200"></canvas>
+    <div class="progress">
+      <div class="label">Pendapatan Asli Desa</div>
+      <div class="bar">
+        <div class="fill" style="width: 0.2%;"></div>
+      </div>
+      <div class="value">Rp5.675.000,00</div>
+    </div>
+    <div class="progress">
+      <div class="label">Pendapatan Transfer</div>
+      <div class="bar">
+        <div class="fill" style="width: 99.78%;"></div>
+      </div>
+      <div class="value">Rp2.555.355.600,00</div>
+    </div>
+    <div class="progress">
+      <div class="label">Pendapatan Lain-lain</div>
+      <div class="bar">
+        <div class="fill" style="width: 0%;"></div>
+      </div>
+      <div class="value">Rp0,00</div>
+    </div>
+  </section>
+
+  <section class="chart-section">
+    <h2>Belanja Desa 2025</h2>
+    <canvas id="chartBelanja" width="400" height="200"></canvas>
+  </section>
+
+  <section class="chart-section">
+    <h2>Pembiayaan Desa 2025</h2>
+    <canvas id="chartPembiayaan" width="400" height="200"></canvas>
+    <div class="progress">
+      <div class="label">Penerimaan</div>
+      <div class="bar">
+        <div class="fill" style="width: 100%;"></div>
+      </div>
+      <div class="value">Rp9.215.147,00</div>
+    </div>
+    <div class="progress">
+      <div class="label">Pengeluaran</div>
+      <div class="bar">
+        <div class="fill" style="width: 0%;"></div>
+      </div>
+      <div class="value">Rp0,00</div>
+    </div>
+  </section>
+    <button id="openBtn" class="img-button">
+    <img src="assets/pengaduan.png" alt="Buat Pengaduan">
+  </button>
+  
+
+  <div id="popupForm" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeBtn">&times;</span>
+      <h2>Form Pengaduan Desa</h2>
+      <form action="#" method="post">
+        <label for="nama">Nama Lengkap*</label>
+        <input type="text" id="nama" name="nama" required>
+
+        <label for="kontak">NIK</label>
+        <input type="text" id="NIK" name="NIK" required>
+
+        <label for="kategori">Kategori Pengaduan*</label>
+        <select id="kategori" name="kategori" required>
+          <option value="">-- Pilih Kategori --</option>
+          <option value="layanan">Layanan Publik</option>
+          <option value="infrastruktur">Infrastruktur</option>
+          <option value="keamanan">Keamanan</option>
+        </select>
+
+        <label for="pesan">Isi Pengaduan*</label>
+        <textarea id="pesan" name="pesan" rows="4" required></textarea>
+
+        <label for="lampiran">Lampiran</label>
+        <input type="file" id="lampiran" name="lampiran" required>
+
+        <button type="submit">Kirim Pengaduan</button>
+      </form>
+    </div>
+  </div>
+<footer>
+  <div class="footer-container">
+    
+    <div class="footer-logo">
+      <img src="assets/LOGO FINAL.png" alt="Logo Desa">
+    </div>
+
+    <div class="footer-judul">  
+      <h3>Desa Soraya</h3>
+       <p>Jalan Sultan Hasanuddin KM. 1<br>
+        Desa Soraya, Kecamatan Pakis,<br>
+        Kabupaten Kinasih<br>
+        Provinsi Jawa Utara, 56111</p>    
+    </div>
+    
+  <div class="footer-contact-section">
+        <h3>Hubungi Kami</h3>
+        <div class="contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg>
+            <span>0427 3230288</span>
+        </div>
+
+        <div class="contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/>
+                <rect x="2" y="4" width="20" height="16" rx="2"/>
+            </svg>
+            <span>desa.Soraya.baru@gmail.com</span>
+        </div>
+
+        <div class="contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+            </svg>
+            <span>Facebook</span>
+        </div>
+
+        <div class="contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/>
+            <path d="m10 15 5-3-5-3z"/>
+            </svg>
+            <span>YouTube</span>
+        </div>
+    </div>
+
+    <div class="footer-nomor">
+      <h3>Nomor Telepon Penting</h3>
+      <ul>
+        <li>Damkar Soraya</li>
+        <li>Ambulance Soraya</li>
+        <li>Babinsa Desa Soraya</li>
+        <li>PSTU Soraya</li>
+      </ul>
+    </div>
+
+    <div class="footer-links">
+      <h3>Jelajahi</h3>
+      <ul>
+        <li><a href="#">JADESTA</a></li>
+        <li><a href="#">Website Kemendesa</a></li>
+        <li><a href="#">Website Kemendagri</a></li>
+        <li><a href="#">Cek DPT Online</a></li>
+      </ul>
+    </div>
+
+  </div>
+</footer>
+<script>
+// 1. Chart Tahunan
+const ctxTahunan = document.getElementById('chartTahunan').getContext('2d');
+new Chart(ctxTahunan, {
+  type: 'bar',
+  data: {
+    labels: ['2020', '2021', '2022', '2023', '2024', '2025'],
+    datasets: [
+      {
+        label: 'Pendapatan',
+        data: [2416381124, 2202313100, 2254219020, 2360640000, 2323107660, 2561030600],
+        backgroundColor: 'rgb(43, 141, 43)',
+      },
+      {
+        label: 'Belanja',
+        data: [2504813565, 2232578525, 2222410120, 2290450000, 2289120000, 0],
+        backgroundColor: 'rgb(208, 255, 218)',
+      }
+    ]
+  },
+  options: {
+    responsive: true,
+    plugins: {
+      title: {
+        display: true,
+        text: 'Pendapatan dan Belanja Desa dari Tahun ke Tahun'
+      }
+    },
+    scales: {
+      y: {
+        beginAtZero: true,
+        ticks: {
+          callback: function(value) {
+            return 'Rp' + value.toLocaleString('id-ID');
+          }
+        }
+      }
+    }
+  }
+});
+
+// 2. Chart Pendapatan Desa 2025
+const ctxPendapatan = document.getElementById('chartPendapatan').getContext('2d');
+new Chart(ctxPendapatan, {
+  type: 'bar',
+  data: {
+    labels: ['Pendapatan Asli Desa', 'Pendapatan Transfer', 'Pendapatan Lain-lain'],
+    datasets: [{
+      label: 'Jumlah (Rp)',
+      data: [5675000, 2555355600, 0],
+      backgroundColor: 'rgb(43, 141, 43)',
+    }]
+  },
+  options: {
+    plugins: {
+      title: {
+        display: true,
+        text: 'Pendapatan Desa Tahun 2025'
+      }
+    },
+    scales: {
+      y: {
+        beginAtZero: true,
+        ticks: {
+          callback: function(value) {
+            return 'Rp' + value.toLocaleString('id-ID');
+          }
+        }
+      }
+    }
+  }
+});
+
+// 3. Chart Belanja Desa 2025
+const ctxBelanja = document.getElementById('chartBelanja').getContext('2d');
+new Chart(ctxBelanja, {
+  type: 'bar',
+  data: {
+    labels: [
+      'Penyelenggaraan Pemerintahan',
+      'Pembangunan Desa',
+      'Pembinaan Kemasyarakatan',
+      'Pemberdayaan Masyarakat',
+      'Penanggulangan Bencana'
+    ],
+    datasets: [{
+      label: 'Jumlah (Rp)',
+      data: [0, 0, 0, 0, 0], 
+      backgroundColor: 'rgb(43, 141, 43)'
+    }]
+  },
+  options: {
+    plugins: {
+      title: {
+        display: true,
+        text: 'Belanja Desa Tahun 2025'
+      }
+    },
+    scales: {
+      y: {
+        beginAtZero: true,
+        ticks: {
+          callback: function(value) {
+            return 'Rp' + value.toLocaleString('id-ID');
+          }
+        }
+      }
+    }
+  }
+});
+// 4. Chart Pembiayaan Desa 2025
+const ctxPembiayaan = document.getElementById('chartPembiayaan').getContext('2d');
+new Chart(ctxPembiayaan, {
+  type: 'bar',
+  data: {
+    labels: ['Penerimaan Pembiayaan', 'Pengeluaran Pembiayaan' ],
+    datasets: [{
+      label: 'Jumlah (Rp)',
+      data: [30339400, 0, 30339400],
+      backgroundColor: ['rgb(43, 141, 43)', '#fd7e14' ],
+    }]
+  },
+  options: {
+    plugins: {
+      title: {
+        display: true,
+        text: 'Pembiayaan Desa Tahun 2025'
+      }
+    },
+    scales: {
+      y: {
+        beginAtZero: true,
+        ticks: {
+          callback: function(value) {
+            return 'Rp' + value.toLocaleString('id-ID');
+          }
+        }
+      }
+    }
+  }
+});
+     const isLoggedIn = localStorage.getItem('loggedIn') === 'true';
+    const userAvatar = document.getElementById('userAvatar');
+    const loginOption = document.getElementById('loginOption');
+    const registerOption = document.getElementById('registerOption');
+    const profileOption = document.getElementById('profileOption');
+    const logoutOption = document.getElementById('logoutOption');
+
+    if (isLoggedIn) {
+      const userNIK = localStorage.getItem('userNIK');
+      const userName = localStorage.getItem('userName') || 'User';
+      userAvatar.src = 'assets/profile.png';
+      userAvatar.title = `${userName} (${userNIK})`;
+      loginOption.classList.add('d-none');
+      registerOption.classList.add('d-none');
+      profileOption.classList.remove('d-none');
+      logoutOption.classList.remove('d-none');
+    } else {
+      userAvatar.src = 'assets/profile.png';
+    }
+
+    // Tombol logout
+    logoutOption.querySelector('a').onclick = () => {
+      // Jangan hapus data login terakhir agar tetap bisa autofill
+      localStorage.removeItem('loggedIn');
+      localStorage.removeItem('userNIK');
+      localStorage.removeItem('userName');
+      location.reload();
+    };
+
+    const modal = document.getElementById("popupForm");
+  const openBtn = document.getElementById("openBtn");
+  const closeBtn = document.getElementById("closeBtn");
+
+  openBtn.onclick = () => modal.style.display = "flex";
+  closeBtn.onclick = () => modal.style.display = "none";
+  window.onclick = (e) => { if (e.target === modal) modal.style.display = "none"; };
+
+  // PRE-FILL NIK jika user login
+  document.addEventListener('DOMContentLoaded', () => {
+  const loggedIn = localStorage.getItem('loggedIn') === 'true';
+  const userNIK = localStorage.getItem('userNIK');
+  const userName = localStorage.getItem('userName');
+
+  if (loggedIn) {
+    if (userNIK) {
+      const nikField = document.getElementById('NIK');
+      nikField.value = userNIK;
+      nikField.readOnly = true;
+    }
+
+    if (userName) {
+      const namaField = document.getElementById('nama');
+      namaField.value = userName;
+      namaField.readOnly = true;
+    }
+  }
+});
+
+
+  // HANDLE SUBMIT PENGADUAN
+  const form = document.querySelector('#popupForm form');
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const loggedIn = localStorage.getItem('loggedIn') === 'true';
+    if (!loggedIn) {
+      alert("Silakan login terlebih dahulu sebelum mengirim pengaduan.");
+      window.location.href = 'login.html';  // Arahkan ke halaman utama
+      return;
+    }
+
+    const nik = document.getElementById('NIK').value.trim();
+    const kategori = document.getElementById('kategori').value;
+    const pesan = document.getElementById('pesan').value.trim();
+
+    const users = JSON.parse(localStorage.getItem('users') || '[]');
+    const user = users.find(u => u.nik === nik);
+    if (!user) {
+      alert("NIK Anda tidak terdaftar.");
+      return;
+    }
+
+    const pengaduan = {
+      nama: user.nama,
+      nik: nik,
+      kategori: kategori,
+      pesan: pesan,
+      tanggal: new Date().toLocaleString()
+    };
+
+    const semuaPengaduan = JSON.parse(localStorage.getItem('pengaduan') || '[]');
+    semuaPengaduan.push(pengaduan);
+    localStorage.setItem('pengaduan', JSON.stringify(semuaPengaduan));
+
+    window.location.href = 'pengaduan.html';
+  });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

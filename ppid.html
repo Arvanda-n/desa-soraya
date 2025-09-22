@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PPID & Informasi Publik</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link rel="stylesheet" href="full.css">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+ <!-- Navbar -->
+ <div class="navbar-no">
+    <div class="navbar-logo-home">
+      <img src="assets/LOGO FINAL.png" alt="Logo" />
+    </div>
+    <div class="navbar-menu-home">
+      <a href="home.html" >Home</a> |
+
+      <div class="dropdown d-inline">
+        <a class="nav-link dropdown-toggle"  href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Informasi
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="infografis.html">Infografis</a></li>
+          <li><a class="dropdown-item" href="ppid.html">PPID</a></li>
+        </ul>
+      </div>
+
+      <a href="Profil Desaa.html">Profil Desa</a> |
+      <a href="berita list.html">Berita</a> |
+
+      <!-- Tambahan Dropdown Avatar -->
+      <div class="dropdown d-inline">
+        <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <img src="assets/profile.png" alt="User" width="40" height="40" class="rounded-circle" id="userAvatar">
+        </a>
+        <ul class="dropdown-menu dropdown-menu-end">
+          <li id="loginOption"><a class="dropdown-item" href="login.html">Login</a></li>
+          <li id="registerOption"><a class="dropdown-item" href="registrasi.html">Register</a></li>
+          <li id="profileOption" class="d-none"><a class="dropdown-item" href="pengaduan.html">Profile</a></li>
+          <li id="logoutOption" class="d-none"><a class="dropdown-item" href="#">Logout</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+  <!-- PPID SECTION -->
+  <div class="ppid-container">
+    <div class="ppid-text">
+      <h1><b>PPID</b></h1>
+      <p>
+        Pejabat Pengelola Informasi dan Dokumentasi (PPID) adalah pejabat yang bertanggung jawab di bidang penyimpanan, pendokumentasian, penyediaan, dan/atau pelayanan informasi di badan publik.
+      </p>
+      <a href="hukum.html">
+        <button>Dasar Hukum PPID</button>
+      </a>
+
+    </div>
+
+    <div class="ppid-icons">
+      <div class="icon-card">
+        <a href="setiap saat.html">
+        <img src="assets/informasi-setiap-saat-cAArEY6x.png" alt="Setiap Saat">
+        <h3>INFORMASI<br>SETIAP SAAT</h3>
+        </a>
+      </div>
+      <div class="icon-card">
+        <a href="serta.html">
+        <img src="assets/informasi-serta-merta-1SoPj5Fg.png" alt="Serta Merta">
+        <h3>INFORMASI<br>SERTA MERTA</h3>
+        </a>
+      </div>
+      <div class="icon-card">
+        <a href="berkala.html">
+        <img src="assets/informasi-secara-berkala-BWto8-jg.png" alt="Berkala">
+        <h3>INFORMASI<br>SECARA BERKALA</h3>
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="info-section">
+      <h2><b>INFORMASI PUBLIK TERBARU</b></h2>
+      <p>Update terakhir 14 hari yang lalu</p>
+
+<div class="card p-3 mb-3 shadow-sm d-flex flex-md-row justify-content-between align-items-start">
+  <div class="me-3">
+    <h5 class="mb-3"><b>DOKUMEN RKP Desa SORAYA TAHUN 2025</b></h5>
+    <p class="d-flex align-items-center mb-2">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="me-2" viewBox="0 0 16 16">
+        <path d="M5 1a1 1 0 0 0-1 1v1h2V1H5zm3 0v2h2V2a1 1 0 0 0-1-1H8zm-3 3H4v2h1V4zm2 0v2h2V4H7zm-3 3H4v2h1V7zm3 0v2h2V7H7zm-3 3H4v2h1v-2zm3 0v2h2v-2H7z"/>
+      </svg>
+      Informasi tentang program atau kegiatan desa
+    </p>
+    <p class="d-flex align-items-center text-muted mb-0">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="me-2" viewBox="0 0 16 16">
+        <path d="M8 3.5a.5.5 0 0 1 .5.5v3l2 1a.5.5 0 0 1-.5.866l-2.5-1.5A.5.5 0 0 1 7.5 7V4a.5.5 0 0 1 .5-.5z"/>
+        <path d="M8 16A8 8 0 1 1 8 0a8 8 0 0 1 0 16zM1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8z"/>
+      </svg>
+      Rabu, 4 Juni 2025
+    </p>
+  </div>
+
+  <div class="d-flex flex-column gap-2 mt-3 mt-md-0">
+    <button class="btn btn-outline-secondary" onclick="showPopup()">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="me-2" viewBox="0 0 16 16">
+        <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V5.5L10.5 0H4zm4 1.5V5h3.5L8 1.5z"/>
+      </svg>
+      Lihat Berkas
+    </button>
+
+     <a href="https://online.pubhtml5.com/vmehd/pzsv/" target="_blank" class="btn btn-outline-secondary">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="me-2" viewBox="0 0 16 16">
+          <path d="M.5 9.9a.5.5 0 0 1 .5.5V13a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V10.4a.5.5 0 0 1 1 0V13a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V10.4a.5.5 0 0 1 .5-.5z"/>
+          <path d="M5.354 7.646a.5.5 0 1 1 .707.708L8 10.293V1.5a.5.5 0 0 1 1 0v8.793l1.939-1.939a.5.5 0 0 1 .707.707l-2.646 2.647a.5.5 0 0 1-.708 0L5.354 8.354a.5.5 0 0 1 0-.708z"/>
+        </svg>
+        Unduh (1x)
+      </a>
+  </div>
+</div>
+
+<div class="card p-3 mb-3 shadow-sm d-flex flex-md-row justify-content-between align-items-start">
+  <div class="me-3">
+    <h5 class="mb-3"><b>DOKUMEN RPRJM DESA SORAYA TAHUN 2023-2029</b></h5>
+    <p class="d-flex align-items-center mb-2">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="me-2" viewBox="0 0 16 16">
+        <path d="M5 1a1 1 0 0 0-1 1v1h2V1H5zm3 0v2h2V2a1 1 0 0 0-1-1H8zm-3 3H4v2h1V4zm2 0v2h2V4H7zm-3 3H4v2h1V7zm3 0v2h2V7H7zm-3 3H4v2h1v-2zm3 0v2h2v-2H7z"/>
+      </svg>
+      Informasi tentang program atau kegiatan desa
+    </p>
+    <p class="d-flex align-items-center text-muted mb-0">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="me-2" viewBox="0 0 16 16">
+        <path d="M8 3.5a.5.5 0 0 1 .5.5v3l2 1a.5.5 0 0 1-.5.866l-2.5-1.5A.5.5 0 0 1 7.5 7V4a.5.5 0 0 1 .5-.5z"/>
+        <path d="M8 16A8 8 0 1 1 8 0a8 8 0 0 1 0 16zM1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8z"/>
+      </svg>
+      Rabu, 4 Juni 2025
+    </p>
+  </div>
+
+  <div class="d-flex flex-column gap-2 mt-3 mt-md-0">
+    <button class="btn btn-outline-secondary" onclick="showPopup()">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="me-2" viewBox="0 0 16 16">
+        <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V5.5L10.5 0H4zm4 1.5V5h3.5L8 1.5z"/>
+      </svg>
+      Lihat Berkas
+    </button>
+
+  <a href="https://online.pubhtml5.com/vmehd/pzsv/" target="_blank" class="btn btn-outline-secondary">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="me-2" viewBox="0 0 16 16">
+          <path d="M.5 9.9a.5.5 0 0 1 .5.5V13a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V10.4a.5.5 0 0 1 1 0V13a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V10.4a.5.5 0 0 1 .5-.5z"/>
+          <path d="M5.354 7.646a.5.5 0 1 1 .707.708L8 10.293V1.5a.5.5 0 0 1 1 0v8.793l1.939-1.939a.5.5 0 0 1 .707.707l-2.646 2.647a.5.5 0 0 1-.708 0L5.354 8.354a.5.5 0 0 1 0-.708z"/>
+        </svg>
+        Unduh (2x)
+      </a>
+  </div>
+</div>
+
+<div class="card p-3 mb-3 shadow-sm d-flex flex-md-row justify-content-between align-items-start">
+  <div class="me-3">
+    <h5 class="mb-3"><b>Realisasi ABP Desa Tahun Anggaran 2024</b></h5>
+    <p class="d-flex align-items-center mb-2">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="me-2" viewBox="0 0 16 16">
+        <path d="M5 1a1 1 0 0 0-1 1v1h2V1H5zm3 0v2h2V2a1 1 0 0 0-1-1H8zm-3 3H4v2h1V4zm2 0v2h2V4H7zm-3 3H4v2h1V7zm3 0v2h2V7H7zm-3 3H4v2h1v-2zm3 0v2h2v-2H7z"/>
+      </svg>
+      Ringkasan Laporan Keuangan
+    </p>
+    <p class="d-flex align-items-center text-muted mb-0">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="me-2" viewBox="0 0 16 16">
+        <path d="M8 3.5a.5.5 0 0 1 .5.5v3l2 1a.5.5 0 0 1-.5.866l-2.5-1.5A.5.5 0 0 1 7.5 7V4a.5.5 0 0 1 .5-.5z"/>
+        <path d="M8 16A8 8 0 1 1 8 0a8 8 0 0 1 0 16zM1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8z"/>
+      </svg>
+      Selasa, 14 Januari 2025
+    </p>
+  </div>
+
+  <div class="d-flex flex-column gap-2 mt-3 mt-md-0">
+    <button class="btn btn-outline-secondary" onclick="showPopup()">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="me-2" viewBox="0 0 16 16">
+        <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V5.5L10.5 0H4zm4 1.5V5h3.5L8 1.5z"/>
+      </svg>
+      Lihat Berkas
+    </button>
+
+  <a href="https://online.pubhtml5.com/vmehd/pzsv/" target="_blank" class="btn btn-outline-secondary">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="me-2" viewBox="0 0 16 16">
+          <path d="M.5 9.9a.5.5 0 0 1 .5.5V13a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V10.4a.5.5 0 0 1 1 0V13a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V10.4a.5.5 0 0 1 .5-.5z"/>
+          <path d="M5.354 7.646a.5.5 0 1 1 .707.708L8 10.293V1.5a.5.5 0 0 1 1 0v8.793l1.939-1.939a.5.5 0 0 1 .707.707l-2.646 2.647a.5.5 0 0 1-.708 0L5.354 8.354a.5.5 0 0 1 0-.708z"/>
+        </svg>
+        Unduh (9x)
+      </a>
+  </div>
+</div>
+
+<div class="card p-3 mb-3 shadow-sm d-flex flex-md-row justify-content-between align-items-start">
+  <div class="me-3">
+    <h5 class="mb-3"><b>APB Desa Soraya Tahun Anggaran 2024</b></h5>
+    <p class="d-flex align-items-center mb-2">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="me-2" viewBox="0 0 16 16">
+        <path d="M5 1a1 1 0 0 0-1 1v1h2V1H5zm3 0v2h2V2a1 1 0 0 0-1-1H8zm-3 3H4v2h1V4zm2 0v2h2V4H7zm-3 3H4v2h1V7zm3 0v2h2V7H7zm-3 3H4v2h1v-2zm3 0v2h2v-2H7z"/>
+      </svg>
+      Anggaran Pendapatan dan Belanja Desa
+    </p>
+    <p class="d-flex align-items-center text-muted mb-0">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="me-2" viewBox="0 0 16 16">
+        <path d="M8 3.5a.5.5 0 0 1 .5.5v3l2 1a.5.5 0 0 1-.5.866l-2.5-1.5A.5.5 0 0 1 7.5 7V4a.5.5 0 0 1 .5-.5z"/>
+        <path d="M8 16A8 8 0 1 1 8 0a8 8 0 0 1 0 16zM1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8z"/>
+      </svg>
+      Selasa, 14 Januari 2025
+    </p>
+  </div>
+
+  <div class="d-flex flex-column gap-2 mt-3 mt-md-0">
+    <button class="btn btn-outline-secondary" onclick="showPopup()">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="me-2" viewBox="0 0 16 16">
+        <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V5.5L10.5 0H4zm4 1.5V5h3.5L8 1.5z"/>
+      </svg>
+      Lihat Berkas
+    </button>
+
+  <a href="https://online.pubhtml5.com/vmehd/pzsv/" target="_blank" class="btn btn-outline-secondary">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="me-2" viewBox="0 0 16 16">
+          <path d="M.5 9.9a.5.5 0 0 1 .5.5V13a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V10.4a.5.5 0 0 1 1 0V13a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V10.4a.5.5 0 0 1 .5-.5z"/>
+          <path d="M5.354 7.646a.5.5 0 1 1 .707.708L8 10.293V1.5a.5.5 0 0 1 1 0v8.793l1.939-1.939a.5.5 0 0 1 .707.707l-2.646 2.647a.5.5 0 0 1-.708 0L5.354 8.354a.5.5 0 0 1 0-.708z"/>
+        </svg>
+        Unduh (2x)
+      </a>
+  </div>
+</div>
+
+<div class="card p-3 mb-3 shadow-sm d-flex flex-md-row justify-content-between align-items-start">
+  <div class="me-3">
+    <h5 class="mb-3"><b>Realisasi ABP Desa Tahun Anggaran 2023</b></h5>
+    <p class="d-flex align-items-center mb-2">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="me-2" viewBox="0 0 16 16">
+        <path d="M5 1a1 1 0 0 0-1 1v1h2V1H5zm3 0v2h2V2a1 1 0 0 0-1-1H8zm-3 3H4v2h1V4zm2 0v2h2V4H7zm-3 3H4v2h1V7zm3 0v2h2V7H7zm-3 3H4v2h1v-2zm3 0v2h2v-2H7z"/>
+      </svg>
+      Ringkasan Laporan Keuangan
+    </p>
+    <p class="d-flex align-items-center text-muted mb-0">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="me-2" viewBox="0 0 16 16">
+        <path d="M8 3.5a.5.5 0 0 1 .5.5v3l2 1a.5.5 0 0 1-.5.866l-2.5-1.5A.5.5 0 0 1 7.5 7V4a.5.5 0 0 1 .5-.5z"/>
+        <path d="M8 16A8 8 0 1 1 8 0a8 8 0 0 1 0 16zM1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8z"/>
+      </svg>
+      Rabu, 17 Januari 2024
+    </p>
+  </div>
+
+  <div class="d-flex flex-column gap-2 mt-3 mt-md-0">
+    <button class="btn btn-outline-secondary" onclick="showPopup()">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="me-2" viewBox="0 0 16 16">
+        <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V5.5L10.5 0H4zm4 1.5V5h3.5L8 1.5z"/>
+      </svg>
+      Lihat Berkas
+    </button>
+
+  <a href="https://online.pubhtml5.com/vmehd/pzsv/" target="_blank" class="btn btn-outline-secondary">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="me-2" viewBox="0 0 16 16">
+          <path d="M.5 9.9a.5.5 0 0 1 .5.5V13a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V10.4a.5.5 0 0 1 1 0V13a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V10.4a.5.5 0 0 1 .5-.5z"/>
+          <path d="M5.354 7.646a.5.5 0 1 1 .707.708L8 10.293V1.5a.5.5 0 0 1 1 0v8.793l1.939-1.939a.5.5 0 0 1 .707.707l-2.646 2.647a.5.5 0 0 1-.708 0L5.354 8.354a.5.5 0 0 1 0-.708z"/>
+        </svg>
+        Unduh (7x)
+      </a>
+  </div>
+</div>
+
+<div class="card p-3 mb-3 shadow-sm d-flex flex-md-row justify-content-between align-items-start">
+  <div class="me-3">
+    <h5 class="mb-3"><b>APB Desa Soraya Tahun Anggaran 2023</b></h5>
+    <p class="d-flex align-items-center mb-2">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="me-2" viewBox="0 0 16 16">
+        <path d="M5 1a1 1 0 0 0-1 1v1h2V1H5zm3 0v2h2V2a1 1 0 0 0-1-1H8zm-3 3H4v2h1V4zm2 0v2h2V4H7zm-3 3H4v2h1V7zm3 0v2h2V7H7zm-3 3H4v2h1v-2zm3 0v2h2v-2H7z"/>
+      </svg>
+      Anggaran Pendapatan dan Belanja Desa
+    </p>
+    <p class="d-flex align-items-center text-muted mb-0">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="me-2" viewBox="0 0 16 16">
+        <path d="M8 3.5a.5.5 0 0 1 .5.5v3l2 1a.5.5 0 0 1-.5.866l-2.5-1.5A.5.5 0 0 1 7.5 7V4a.5.5 0 0 1 .5-.5z"/>
+        <path d="M8 16A8 8 0 1 1 8 0a8 8 0 0 1 0 16zM1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8z"/>
+      </svg>
+      Rabu, 17 Januari 2024
+    </p>
+  </div>
+
+  <div class="d-flex flex-column gap-2 mt-3 mt-md-0">
+    <button class="btn btn-outline-secondary" onclick="showPopup()">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="me-2" viewBox="0 0 16 16">
+        <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V5.5L10.5 0H4zm4 1.5V5h3.5L8 1.5z"/>
+      </svg>
+      Lihat Berkas
+    </button>
+
+  <a href="https://online.pubhtml5.com/vmehd/pzsv/" target="_blank" class="btn btn-outline-secondary">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="me-2" viewBox="0 0 16 16">
+          <path d="M.5 9.9a.5.5 0 0 1 .5.5V13a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V10.4a.5.5 0 0 1 1 0V13a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V10.4a.5.5 0 0 1 .5-.5z"/>
+          <path d="M5.354 7.646a.5.5 0 1 1 .707.708L8 10.293V1.5a.5.5 0 0 1 1 0v8.793l1.939-1.939a.5.5 0 0 1 .707.707l-2.646 2.647a.5.5 0 0 1-.708 0L5.354 8.354a.5.5 0 0 1 0-.708z"/>
+        </svg>
+        Unduh (88x)
+      </a>
+  </div>
+</div>
+  </div>
+
+
+
+   <button id="openBtn" class="img-button">
+    <img src="assets/pengaduan.png" alt="Buat Pengaduan">
+  </button>
+  
+
+  <div id="popupForm" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeBtn">&times;</span>
+      <h2>Form Pengaduan Desa</h2>
+      <form action="#" method="post">
+        <label for="nama">Nama Lengkap*</label>
+        <input type="text" id="nama" name="nama" required>
+
+        <label for="kontak">NIK</label>
+        <input type="text" id="NIK" name="NIK" required>
+
+        <label for="kategori">Kategori Pengaduan*</label>
+        <select id="kategori" name="kategori" required>
+          <option value="">-- Pilih Kategori --</option>
+          <option value="layanan">Layanan Publik</option>
+          <option value="infrastruktur">Infrastruktur</option>
+          <option value="keamanan">Keamanan</option>
+        </select>
+
+        <label for="pesan">Isi Pengaduan*</label>
+        <textarea id="pesan" name="pesan" rows="4" required></textarea>
+
+        <label for="lampiran">Lampiran</label>
+        <input type="file" id="lampiran" name="lampiran" required>
+
+        <button type="submit">Kirim Pengaduan</button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-container">
+
+      <div class="footer-logo">
+        <img src="assets/LOGO FINAL.png" alt="Logo Desa">
+      </div>
+
+      <div class="footer-judul">
+        <h3>Desa Soraya</h3>
+        <p>Jalan Sultan Hasanuddin KM. 1<br>
+        Desa Soraya, Kecamatan Pakis,<br>
+        Kabupaten Kinasih<br>
+        Provinsi Jawa Utara, 56111</p>
+      </div>
+
+      <div class="footer-contact-section">
+        <h3>Hubungi Kami</h3>
+
+        <div class="contact-item">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" />
+          </svg>
+          <span>0427 3230288</span>
+        </div>
+
+        <div class="contact-item">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
+            <rect x="2" y="4" width="20" height="16" rx="2" />
+          </svg>
+          <span>desa.Soraya.baru@gmail.com</span>
+        </div>
+
+        <div class="contact-item">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+          </svg>
+          <span>Facebook</span>
+        </div>
+
+        <div class="contact-item">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17" />
+            <path d="m10 15 5-3-5-3z" />
+          </svg>
+          <span>YouTube</span>
+        </div>
+      </div>
+
+      <div class="footer-nomor">
+        <h3>Nomor Telepon Penting</h3>
+        <ul>
+          <li>Damkar Soraya</li>
+          <li>Ambulance Soraya</li>
+          <li>Babinsa Desa Soraya</li>
+          <li>PSTU Soraya</li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h3>Jelajahi</h3>
+        <ul>
+          <li><a href="#">JADESTA</a></li>
+          <li><a href="#">Website Kemendesa</a></li>
+          <li><a href="#">Website Kemendagri</a></li>
+          <li><a href="#">Cek DPT Online</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script>
+    function toggleAccordion(header) {
+      const content = header.nextElementSibling;
+      content.classList.toggle('active');
+      header.classList.toggle('active');
+    }
+ function showPopup() {
+  Swal.fire({
+    title: 'Preview Dokumen PDF',
+    html: `
+      <iframe src="https://online.pubhtml5.com/vmehd/pzsv/preview" width="100%" height="500px" style="border:none;"></iframe>
+    `,
+    width: 800,
+    showCloseButton: true,
+    showConfirmButton: false,
+    focusConfirm: false
+  });
+}
+     const isLoggedIn = localStorage.getItem('loggedIn') === 'true';
+    const userAvatar = document.getElementById('userAvatar');
+    const loginOption = document.getElementById('loginOption');
+    const registerOption = document.getElementById('registerOption');
+    const profileOption = document.getElementById('profileOption');
+    const logoutOption = document.getElementById('logoutOption');
+
+    if (isLoggedIn) {
+      const userNIK = localStorage.getItem('userNIK');
+      const userName = localStorage.getItem('userName') || 'User';
+      userAvatar.src = 'assets/profile.png';
+      userAvatar.title = `${userName} (${userNIK})`;
+      loginOption.classList.add('d-none');
+      registerOption.classList.add('d-none');
+      profileOption.classList.remove('d-none');
+      logoutOption.classList.remove('d-none');
+    } else {
+      userAvatar.src = 'assets/profile.png';
+    }
+
+    // Tombol logout
+    logoutOption.querySelector('a').onclick = () => {
+      // Jangan hapus data login terakhir agar tetap bisa autofill
+      localStorage.removeItem('loggedIn');
+      localStorage.removeItem('userNIK');
+      localStorage.removeItem('userName');
+      location.reload();
+    };
+
+    const modal = document.getElementById("popupForm");
+  const openBtn = document.getElementById("openBtn");
+  const closeBtn = document.getElementById("closeBtn");
+
+  openBtn.onclick = () => modal.style.display = "flex";
+  closeBtn.onclick = () => modal.style.display = "none";
+  window.onclick = (e) => { if (e.target === modal) modal.style.display = "none"; };
+
+  // PRE-FILL NIK jika user login
+  document.addEventListener('DOMContentLoaded', () => {
+  const loggedIn = localStorage.getItem('loggedIn') === 'true';
+  const userNIK = localStorage.getItem('userNIK');
+  const userName = localStorage.getItem('userName');
+
+  if (loggedIn) {
+    if (userNIK) {
+      const nikField = document.getElementById('NIK');
+      nikField.value = userNIK;
+      nikField.readOnly = true;
+    }
+
+    if (userName) {
+      const namaField = document.getElementById('nama');
+      namaField.value = userName;
+      namaField.readOnly = true;
+    }
+  }
+});
+
+
+  // HANDLE SUBMIT PENGADUAN
+  const form = document.querySelector('#popupForm form');
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const loggedIn = localStorage.getItem('loggedIn') === 'true';
+    if (!loggedIn) {
+      alert("Silakan login terlebih dahulu sebelum mengirim pengaduan.");
+      window.location.href = 'login.html';  // Arahkan ke halaman utama
+      return;
+    }
+
+    const nik = document.getElementById('NIK').value.trim();
+    const kategori = document.getElementById('kategori').value;
+    const pesan = document.getElementById('pesan').value.trim();
+
+    const users = JSON.parse(localStorage.getItem('users') || '[]');
+    const user = users.find(u => u.nik === nik);
+    if (!user) {
+      alert("NIK Anda tidak terdaftar.");
+      return;
+    }
+
+    const pengaduan = {
+      nama: user.nama,
+      nik: nik,
+      kategori: kategori,
+      pesan: pesan,
+      tanggal: new Date().toLocaleString()
+    };
+
+    const semuaPengaduan = JSON.parse(localStorage.getItem('pengaduan') || '[]');
+    semuaPengaduan.push(pengaduan);
+    localStorage.setItem('pengaduan', JSON.stringify(semuaPengaduan));
+
+    window.location.href = 'pengaduan.html';
+  });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

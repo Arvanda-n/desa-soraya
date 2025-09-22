@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Desa Soraya</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100..900&display=swap" rel="stylesheet">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">  
+  <link rel="stylesheet" href="full.css" />
+</head>
+<body>
+ <div class="navbar-no">
+    <div class="navbar-logo-home">
+      <img src="assets/LOGO FINAL.png" alt="Logo" />
+    </div>
+    <div class="navbar-menu-home">
+      <a href="home.html" >Home</a> |
+
+      <div class="dropdown d-inline">
+        <a class="nav-link dropdown-toggle"  href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Informasi
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="infografis.html">Infografis</a></li>
+          <li><a class="dropdown-item" href="ppid.html">PPID</a></li>
+        </ul>
+      </div>
+
+      <a href="Profil Desaa.html">Profil Desa</a> |
+      <a href="#" class="active">Berita</a> |
+
+      <!-- Tambahan Dropdown Avatar -->
+      <div class="dropdown d-inline">
+        <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <img src="assets/profile.png" alt="User" width="40" height="40" class="rounded-circle" id="userAvatar">
+        </a>
+        <ul class="dropdown-menu dropdown-menu-end">
+          <li id="loginOption"><a class="dropdown-item" href="login.html">Login</a></li>
+          <li id="registerOption"><a class="dropdown-item" href="registrasi.html">Register</a></li>
+          <li id="profileOption" class="d-none"><a class="dropdown-item" href="pengaduan.html">Profile</a></li>
+          <li id="logoutOption" class="d-none"><a class="dropdown-item" href="#">Logout</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</div>
+  <div class="berita-wrapper">
+
+  <div class="konten-utama">
+    <div class="box">
+      <h1>Siswa SD Soraya Wakili Kecamatan dalam Lomba Cerdas Cermat</h1>
+      <p class="tanggal">Dipublikasikan: 22 Juni 2025</p>
+      <img src="assets/crdas crmt.jpg" alt="cerdas sertan">
+
+        <p>Soraya, 22 Juni 2025 – Kabar membanggakan datang dari SD Negeri Soraya. Tiga siswa terbaik mereka berhasil mewakili Kecamatan dalam ajang Lomba Cerdas Cermat tingkat Kabupaten yang akan digelar pekan depan.<p>
+        <p>Prestasi ini diraih setelah mereka menjuarai seleksi tingkat kecamatan dengan nilai sempurna. Persiapan intensif pun terus dilakukan, termasuk bimbingan tambahan dari guru dan dukungan dari orang tua siswa.</p>
+        <p>Kepala Sekolah SD Soraya, Ibu Murni, mengungkapkan rasa bangganya. “Ini menjadi motivasi bagi seluruh siswa untuk terus belajar dan berprestasi,” ucapnya.</p> 
+        <p>Masyarakat desa turut memberikan dukungan moral, termasuk menyediakan transportasi ke lokasi lomba di ibukota kabupaten.</p>
+
+    </div>
+
+<hr>
+<div id="komentar-section">
+  <h3>Tinggalkan Komentar</h3>
+  <form id="formKomentar">
+    <div class="mb-3">
+      <label for="isiKomentar">Komentar Anda:</label>
+      <textarea id="isiKomentar" class="form-control" rows="3" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-success">Kirim Komentar</button>
+  </form>
+
+  <h4 class="mt-4">Komentar Terbaru</h4>
+  <ul id="daftarKomentar" class="list-group mt-3"></ul>
+</div>
+
+  </div>
+
+  <div class="sidebar-berita">
+    <h2>Berita Lainnya</h2>
+
+    <div class="sidebar-home-item">
+      <a href="berita 1.html">
+        <img src="assets/hajatan2.jpeg" alt="hajatan">
+        <div class="sidebar-text">
+          <h4>Pesta Hajatan Meriah di Desa Soraya</h4>
+          <p>Suasana meriah menyelimuti Desa Soraya pada akhir pekan lalu saat salah</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="sidebar-home-item">
+      <a href="berita 2.html">
+        <img src="assets/kerjabakti2.jpg" alt="kerjabakti2">
+        <div class="sidebar-text">
+          <h4>Warga Desa Soraya Gelar Kerja Bakti Bersama</h4>
+          <p>Warga Desa Soraya kembali menunjukkan semangat gotong royong melalui kegiatan</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="sidebar-home-item">
+      <a href="berita 3.html">
+        <img src="assets/karang tarunaa.jpeg" alt="karangtaruna">
+        <div class="sidebar-text">
+          <h4>Karang Taruna Desa Soraya Aktif Kembangkan Kegiatan Pemuda dan Sosial</h4>
+          <p>Karang Taruna Desa Soraya terus menunjukkan eksistensinya sebagai wadah pemuda</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<script>
+     const isLoggedIn = localStorage.getItem('loggedIn') === 'true';
+    const userAvatar = document.getElementById('userAvatar');
+    const loginOption = document.getElementById('loginOption');
+    const registerOption = document.getElementById('registerOption');
+    const profileOption = document.getElementById('profileOption');
+    const logoutOption = document.getElementById('logoutOption');
+
+    if (isLoggedIn) {
+      const userNIK = localStorage.getItem('userNIK');
+      const userName = localStorage.getItem('userName') || 'User';
+      userAvatar.src = 'assets/profile.png';
+      userAvatar.title = `${userName} (${userNIK})`;
+      loginOption.classList.add('d-none');
+      registerOption.classList.add('d-none');
+      profileOption.classList.remove('d-none');
+      logoutOption.classList.remove('d-none');
+    } else {
+      userAvatar.src = 'assets/profile.png';
+    }
+
+    // Tombol logout
+    logoutOption.querySelector('a').onclick = () => {
+      // Jangan hapus data login terakhir agar tetap bisa autofill
+      localStorage.removeItem('loggedIn');
+      localStorage.removeItem('userNIK');
+      localStorage.removeItem('userName');
+      location.reload();
+    };
+
+    const modal = document.getElementById("popupForm");
+  const openBtn = document.getElementById("openBtn");
+  const closeBtn = document.getElementById("closeBtn");
+
+  openBtn.onclick = () => modal.style.display = "flex";
+  closeBtn.onclick = () => modal.style.display = "none";
+  window.onclick = (e) => { if (e.target === modal) modal.style.display = "none"; };
+
+  // PRE-FILL NIK jika user login
+  document.addEventListener('DOMContentLoaded', () => {
+    const loggedIn = localStorage.getItem('loggedIn') === 'true';
+    const userNIK = localStorage.getItem('userNIK');
+    if (loggedIn && userNIK) {
+      const nikField = document.getElementById('NIK');
+      nikField.value = userNIK;
+      nikField.readOnly = true;
+    }
+  });
+
+  // HANDLE SUBMIT PENGADUAN
+  const form = document.querySelector('#popupForm form');
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const loggedIn = localStorage.getItem('loggedIn') === 'true';
+    if (!loggedIn) {
+      alert("Silakan login terlebih dahulu sebelum mengirim pengaduan.");
+      window.location.href = 'login.html';  // Arahkan ke halaman utama
+      return;
+    }
+
+    const nik = document.getElementById('NIK').value.trim();
+    const kategori = document.getElementById('kategori').value;
+    const pesan = document.getElementById('pesan').value.trim();
+
+    const users = JSON.parse(localStorage.getItem('users') || '[]');
+    const user = users.find(u => u.nik === nik);
+    if (!user) {
+      alert("NIK Anda tidak terdaftar.");
+      return;
+    }
+
+    const pengaduan = {
+      nama: user.nama,
+      nik: nik,
+      kategori: kategori,
+      pesan: pesan,
+      tanggal: new Date().toLocaleString()
+    };
+
+    const semuaPengaduan = JSON.parse(localStorage.getItem('pengaduan') || '[]');
+    semuaPengaduan.push(pengaduan);
+    localStorage.setItem('pengaduan', JSON.stringify(semuaPengaduan));
+
+    window.location.href = 'pengaduan.html';
+  });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <script>
+  const komentarForm = document.getElementById("formKomentar");
+  const daftarKomentar = document.getElementById("daftarKomentar");
+
+  const slug = window.location.pathname.split("berita 10.html").pop(); // contoh: 'berita 1.html'
+  const komentarKey = `komentar_${slug}`;
+  const userName = localStorage.getItem("userName") || "Anonim";
+
+  // Fungsi untuk menampilkan semua komentar
+function tampilkanKomentar() {
+  daftarKomentar.innerHTML = "";
+  const semuaKomentar = JSON.parse(localStorage.getItem(komentarKey) || "[]");
+
+  semuaKomentar.reverse().forEach((komentar, index) => {
+    const li = document.createElement("li");
+    li.className = "list-group-item";
+
+    // Komentar isi
+    const isiDiv = document.createElement("div");
+    isiDiv.innerHTML = `
+      <strong>${komentar.nama}</strong> <small class="text-muted">(${komentar.waktu})</small><br>
+      ${komentar.isi}
+    `;
+
+    li.appendChild(isiDiv);
+
+    // Tombol hapus hanya untuk user pemilik komentar
+    if (komentar.nama === userName) {
+      const btn = document.createElement("button");
+      btn.textContent = "Hapus";
+      btn.className = "btn btn-sm btn-danger mt-2";
+      btn.onclick = () => hapusKomentar(index);
+
+      li.appendChild(btn);
+    }
+
+    daftarKomentar.appendChild(li);
+  });
+}
+
+  // Fungsi untuk menghapus komentar berdasarkan index
+  function hapusKomentar(index) {
+    let semuaKomentar = JSON.parse(localStorage.getItem(komentarKey) || "[]");
+    semuaKomentar.splice(semuaKomentar.length - 1 - index, 1); // reverse, jadi harus dihitung dari akhir
+    localStorage.setItem(komentarKey, JSON.stringify(semuaKomentar));
+    tampilkanKomentar();
+  }
+
+  // Saat halaman dimuat, tampilkan komentar
+  document.addEventListener("DOMContentLoaded", tampilkanKomentar);
+
+  // Saat form dikirim
+  komentarForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+    const isi = document.getElementById("isiKomentar").value.trim();
+    if (isi === "") return;
+
+    const komentarBaru = {
+      nama: userName,
+      isi: isi,
+      waktu: new Date().toLocaleString("id-ID")
+    };
+
+    const semuaKomentar = JSON.parse(localStorage.getItem(komentarKey) || "[]");
+    semuaKomentar.push(komentarBaru);
+    localStorage.setItem(komentarKey, JSON.stringify(semuaKomentar));
+
+    document.getElementById("isiKomentar").value = "";
+    tampilkanKomentar();
+  });
+</script>
+
+</body>
+</html>

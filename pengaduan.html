@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Profil Akun</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f9f9f9;
+    }
+    .container-profile {
+      display: flex;
+      margin-top: 50px;
+    }
+    .sidebar {
+      width: 220px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      padding: 20px;
+      height: fit-content;
+      border-radius: 6px;
+    }
+    .sidebar a {
+      display: block;
+      margin-bottom: 15px;
+      color: #333;
+      text-decoration: none;
+    }
+    .sidebar a.active {
+      font-weight: bold;
+      color: #0d6efd;
+    }
+    .profile-content {
+      flex: 1;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      margin-left: 30px;
+      padding: 25px;
+      border-radius: 6px;
+    }
+    .profile-picture {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .profile-picture img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+    .form-label {
+      font-weight: 500;
+    }
+   
+  </style>
+</head>
+<body>
+
+<div class="container container-profile">
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <div class="profile-picture">
+      <img src="assets/profile.png" alt="Foto Profil">
+      <div id="profileName" class="fw-bold">Nama Pengguna</div>
+      <small><a href="#">View profile</a></small>
+    </div>
+    <a href="#" class="active">Account</a>
+    <a href="#">Change Password</a>
+    <a href="#">Privacy</a>
+  </div>
+
+  <!-- Content -->
+  <div class="profile-content">
+    <h4 class="mb-4"><i class="bi bi-person-circle"></i> Account</h4>
+    <form>
+      <div class="mb-3">
+        <label class="form-label">Username (NIK)</label>
+        <input type="text" class="form-control" id="username" disabled>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">First Name</label>
+        <input type="text" class="form-control" id="firstName" disabled>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Last Name</label>
+        <input type="text" class="form-control" id="lastName" disabled>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Email Address</label>
+        <input type="email" class="form-control" id="email" disabled>
+      </div>
+      <button type="button" class="btn btn-success" disabled>Update Account</button>
+    </form>
+  </div>
+</div>
+
+<div class="container mt-5">
+<h3 class="mb-4">Daftar Pengaduan</h3>
+    <div id="daftarPengaduan"></div>
+
+
+    <a href="Profil Desaa.html" class="btn btn-success mt-3">Kembali ke Beranda</a>
+  </div>
+  </div>
+
+<script>
+  const users = JSON.parse(localStorage.getItem('users') || '[]');
+  const currentNIK = localStorage.getItem('userNIK');
+  const user = users.find(u => u.nik === currentNIK);
+
+  if (user) {
+    const [first, ...last] = user.nama.trim().split(' ');
+    document.getElementById('profileName').textContent = user.nama;
+    document.getElementById('username').value = user.nik;
+    document.getElementById('firstName').value = first;
+    document.getElementById('lastName').value = last.join(' ');
+    document.getElementById('email').value = user.email;
+  }
+
+  // Proses data pengaduan
+  const semuaPengaduan = JSON.parse(localStorage.getItem('pengaduan') || '[]');
+
+  const pengaduanMasuk = [];
+  const pengaduanDiproses = [];
+
+  const sekarang = new Date();
+
+  semuaPengaduan.forEach(p => {
+    if (p.nik === currentNIK) {
+      const waktuPengaduan = new Date(p.tanggal);
+      const selisihMs = sekarang - waktuPengaduan;
+      const selisihJam = selisihMs / (1000 * 60);
+
+      if (selisihJam >= 1) {
+        p.status = 'Sudah Diproses';
+        p.petugas = 'Admin Desa'; // Bisa juga di-random dari daftar petugas
+        pengaduanDiproses.push(p);
+      } else {
+        p.status = 'Diproses';
+        pengaduanMasuk.push(p);
+      }
+    }
+  });
+
+  const container = document.getElementById('daftarPengaduan');
+
+  // Tabel 1: Pengaduan Masuk
+  let html = '<h5>Pengaduan Masuk</h5>';
+  if (pengaduanMasuk.length === 0) {
+    html += '<div class="alert alert-secondary">Tidak ada pengaduan baru.</div>';
+  } else {
+    html += '<table class="table table-bordered table-striped"><thead><tr><th>Nama</th><th>NIK</th><th>Kategori</th><th>Pesan</th><th>Tanggal</th><th>Status</th></tr></thead><tbody>';
+    pengaduanMasuk.forEach(p => {
+      html += `<tr>
+        <td>${p.nama}</td>
+        <td>${p.nik}</td>
+        <td>${p.kategori}</td>
+        <td>${p.pesan}</td>
+        <td>${p.tanggal}</td>
+        <td>${p.status}</td>
+      </tr>`;
+    });
+    html += '</tbody></table>';
+  }
+
+  // Tabel 2: Pengaduan Sudah Diproses
+  html += '<h5 class="mt-4">Pengaduan Sudah Diproses</h5>';
+  if (pengaduanDiproses.length === 0) {
+    html += '<div class="alert alert-secondary">Belum ada pengaduan yang diproses.</div>';
+  } else {
+    html += '<table class="table table-bordered table-striped"><thead><tr><th>Nama</th><th>NIK</th><th>Kategori</th><th>Pesan</th><th>Tanggal</th><th>Status</th><th>Petugas</th></tr></thead><tbody>';
+    pengaduanDiproses.forEach(p => {
+      html += `<tr>
+        <td>${p.nama}</td>
+        <td>${p.nik}</td>
+        <td>${p.kategori}</td>
+        <td>${p.pesan}</td>
+        <td>${p.tanggal}</td>
+        <td>${p.status}</td>
+        <td>${p.petugas}</td>
+      </tr>`;
+    });
+    html += '</tbody></table>';
+  }
+
+  container.innerHTML = html;
+const semuaPengajuan = JSON.parse(localStorage.getItem('pengajuanBansos') || '[]');
+const pengajuanSaya = semuaPengajuan.filter(p => p.nik === currentNIK);
+
+let htmlBansos = '<h5 class="mt-5">Pengajuan Bantuan Sosial</h5>';
+if (pengajuanSaya.length === 0) {
+  htmlBansos += '<div class="alert alert-secondary">Belum ada pengajuan bansos.</div>';
+} else {
+  htmlBansos += `
+    <table class="table table-bordered table-striped">
+      <thead>
+        <tr>
+          <th>Nama</th>
+          <th>NIK</th>
+          <th>Alamat</th>
+          <th>Jenis Bantuan</th>
+          <th>Tanggal</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+  `;
+
+  pengajuanSaya.forEach(p => {
+    const status = p.status || 'Diproses'; // Default fallback
+    htmlBansos += `
+      <tr>
+        <td>${p.nama}</td>
+        <td>${p.nik}</td>
+        <td>${p.alamat}</td>
+        <td>${p.jenisBantuan}</td>
+        <td>${p.tanggal}</td>
+        <td>${status}</td>
+      </tr>
+    `;
+  });
+
+  htmlBansos += '</tbody></table>';
+}
+
+container.innerHTML += htmlBansos;
+
+
+</script>
+
+</body>
+</html>

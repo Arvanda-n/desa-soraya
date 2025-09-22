@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Infografis Desa Soraya</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="full.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body style="padding-top: 50px;">
+
+  <!-- Navbar -->
+ <div class="navbar-no">
+    <div class="navbar-logo-home">
+      <img src="assets/LOGO FINAL.png" alt="Logo" />
+    </div>
+    <div class="navbar-menu-home">
+      <a href="home.html" >Home</a> |
+
+      <div class="dropdown d-inline">
+        <a class="nav-link dropdown-toggle"  href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Informasi
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="infografis.html">Infografis</a></li>
+          <li><a class="dropdown-item" href="ppid.html">PPID</a></li>
+        </ul>
+      </div>
+
+      <a href="Profil Desaa.html">Profil Desa</a> |
+      <a href="berita list.html">Berita</a> |
+
+      <!-- Tambahan Dropdown Avatar -->
+      <div class="dropdown d-inline">
+        <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <img src="assets/profile.png" alt="User" width="40" height="40" class="rounded-circle" id="userAvatar">
+        </a>
+        <ul class="dropdown-menu dropdown-menu-end">
+          <li id="loginOption"><a class="dropdown-item" href="login.html">Login</a></li>
+          <li id="registerOption"><a class="dropdown-item" href="registrasi.html">Register</a></li>
+          <li id="profileOption" class="d-none"><a class="dropdown-item" href="pengaduan.html">Profile</a></li>
+          <li id="logoutOption" class="d-none"><a class="dropdown-item" href="#">Logout</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+  <!-- Judul -->
+  <section class="section">
+    <div class="left">
+      <h1>INFOGRAFIS<br>DESA SORAYA</h1>
+    </div>
+    <div class="menu-kanan">
+        <div class="menu-item">
+            <a href="Infografis.html"> 
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="rgb(47, 75, 47)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                        <path d="M16 3.128a4 4 0 0 1 0 7.744"/>
+                        <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+                        <circle cx="9" cy="7" r="4"/>
+                    </svg>
+                <div>Penduduk</div>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="apbdes.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="rgb(47, 75, 47)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect width="20" height="12" x="2" y="6" rx="2"/>
+                    <circle cx="12" cy="12" r="2"/>
+                    <path d="M6 12h.01M18 12h.01"/>
+                </svg>
+                <div>APBDes</div>
+            </a>
+        </div>
+        <div class="menu-item active">
+            <a href="bansos.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="rgb(47, 75, 47)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z"/>
+                    <path d="M12 22V12"/>
+                    <polyline points="3.29 7 12 12 20.71 7"/>
+                    <path d="m7.5 4.27 9 5.15"/>
+                </svg>
+                <div>Bansos</div>
+            </a>
+        </div>
+    </div>
+  </section>
+  <section class="apb-container">
+    <div class="judul">
+      <h2>Jumlah Penerima Bansos</h2>
+    </div>
+    <div class="apb-wrapper">
+      <div class="col">
+        <div class="apb-card">
+          <div class="orang"> 483</div>
+          <div>
+            <p class="label">Penduduk mendapatkan bantuan</p>
+            <p class="jumlah">VAKSIN 1</p>
+          </div>
+        </div>
+        <div class="apb-card">
+          <div class="orang">300</div>
+          <div>
+            <p class="label">Penduduk mendapatkan bantuan</p>
+            <p class="jumlah">BPNT</p>
+          </div>
+        </div>
+        <div class="apb-card">
+          <div class="orang">150</div>
+          <div>
+            <p class="label">Penduduk mendapatkan bantuan</p>
+            <p class="jumlah">Skrening Kesehatan (Program ILP)</p>
+          </div>
+        </div>
+        <div class="apb-card">
+          <div class="orang">18</div>
+          <div>
+            <p class="label">Penduduk mendapatkan bantuan</p>
+            <p class="jumlah">BAZNAS</p>
+          </div>
+        </div> 
+      </div>
+      <div class="col">
+        <div class="apb-card">
+          <div class="orang">338</div>
+          <div>
+            <p class="label">Penduduk Mendapatkan Bantuan</p>
+            <p class="jumlah">VAKSIN 2</p>
+          </div>
+        </div>
+        <div class="apb-card">
+          <div class="orang">173</div>
+          <div>
+            <p class="label">Penduduk mendapatkan bantuan</p>
+            <p class="jumlah">BLT</p>
+          </div>
+        </div>
+        <div class="apb-card">
+          <div class="orang">125</div>
+          <div>
+            <p class="label">Penduduk mendapatkan bantuan</p>
+            <p class="jumlah">PKH</p>
+          </div>
+        </div>
+        <div class="apb-card">
+          <div class="orang">1</div>
+          <div>
+            <p class="label">Penduduk mendapatkan bantuan</p>
+            <p class="jumlah">BST</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="ajukan-bansos-section">
+  <div class="ajukan-bansos-container">
+    <h3>Ingin mengajukan permohonan bantuan sosial?</h3>
+    <button id="ajukanBansosBtn" class="btn-ajukan">Ajukan Permohonan Bansos</button>
+  </div>
+</section>
+  <button id="openBtn" class="img-button">
+    <img src="assets/pengaduan.png" alt="Buat Pengaduan">
+  </button>
+  
+
+  <div id="popupForm" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeBtn">&times;</span>
+      <h2>Form Pengaduan Desa</h2>
+      <form action="#" method="post">
+        <label for="nama">Nama Lengkap*</label>
+        <input type="text" id="nama" name="nama" required>
+
+        <label for="kontak">NIK</label>
+        <input type="text" id="NIK" name="NIK" required>
+
+        <label for="kategori">Kategori Pengaduan*</label>
+        <select id="kategori" name="kategori" required>
+          <option value="">-- Pilih Kategori --</option>
+          <option value="layanan">Layanan Publik</option>
+          <option value="infrastruktur">Infrastruktur</option>
+          <option value="keamanan">Keamanan</option>
+        </select>
+
+        <label for="pesan">Isi Pengaduan*</label>
+        <textarea id="pesan" name="pesan" rows="4" required></textarea>
+
+        <label for="lampiran">Lampiran</label>
+        <input type="file" id="lampiran" name="lampiran" required>
+
+        <button type="submit">Kirim Pengaduan</button>
+      </form>
+    </div>
+  </div>
+
+<footer>
+  <div class="footer-container">
+    
+    <div class="footer-logo">
+      <img src="assets/LOGO FINAL.png" alt="Logo Desa">
+    </div>
+
+    <div class="footer-judul">  
+      <h3>Desa Soraya</h3>
+       <p>Jalan Sultan Hasanuddin KM. 1<br>
+        Desa Soraya, Kecamatan Pakis,<br>
+        Kabupaten Kinasih<br>
+        Provinsi Jawa Utara, 56111</p>    
+    </div>
+    
+  <div class="footer-contact-section">
+        <h3>Hubungi Kami</h3>
+        <div class="contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg>
+            <span>0427 3230288</span>
+        </div>
+
+        <div class="contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/>
+                <rect x="2" y="4" width="20" height="16" rx="2"/>
+            </svg>
+            <span>desa.Soraya.baru@gmail.com</span>
+        </div>
+
+        <div class="contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+            </svg>
+            <span>Facebook</span>
+        </div>
+
+        <div class="contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/>
+            <path d="m10 15 5-3-5-3z"/>
+            </svg>
+            <span>YouTube</span>
+        </div>
+    </div>
+
+    <div class="footer-nomor">
+      <h3>Nomor Telepon Penting</h3>
+      <ul>
+        <li>Damkar Soraya</li>
+        <li>Ambulance Soraya</li>
+        <li>Babinsa Desa Soraya</li>
+        <li>PSTU Soraya</li>
+      </ul>
+    </div>
+
+    <div class="footer-links">
+      <h3>Jelajahi</h3>
+      <ul>
+        <li><a href="#">JADESTA</a></li>
+        <li><a href="#">Website Kemendesa</a></li>
+        <li><a href="#">Website Kemendagri</a></li>
+        <li><a href="#">Cek DPT Online</a></li>
+      </ul>
+    </div>
+
+  </div>
+</footer>
+<script>
+ajukanBansosBtn.addEventListener('click', () => {
+  const isLoggedIn = localStorage.getItem('loggedIn') === 'true';
+
+  let namaUser = "";
+  let nikUser = "";
+
+  if (isLoggedIn) {
+    const userNIK = localStorage.getItem('userNIK');
+    const users = JSON.parse(localStorage.getItem('users') || '[]');
+    const user = users.find(u => u.nik === userNIK);
+
+    namaUser = user ? user.nama : "";
+    nikUser = user ? user.nik : "";
+
+    Swal.fire({
+      title: '<h2 style="font-size: 20px; font-weight: bold; margin-bottom: 10px;">Form Pengajuan Bansos</h2>',
+      html:
+        `<input id="swal-nama" class="swal2-input" placeholder="Nama Lengkap" value="${namaUser}" readonly style="font-size:14px;">` +
+        `<input id="swal-nik" class="swal2-input" placeholder="NIK" value="${nikUser}" readonly style="font-size:14px;">` +
+        `<input id="swal-alamat" class="swal2-input" placeholder="Alamat Lengkap" value="Desa Soraya" readonly style="font-size:14px;">` +
+        '<div style="margin-top:10px;">' +
+          '<select id="swal-jenis" style="width: 100%; padding: 10px; font-size:14px; border: 1px solid #ccc; border-radius: 4px;">' +
+            '<option value="">-- Pilih Jenis Bantuan --</option>' +
+            '<option value="Sembako">Sembako</option>' +
+            '<option value="BLT">BLT Dana Desa</option>' +
+            '<option value="PKH">PKH</option>' +
+          '</select>' +
+        '</div>',
+      focusConfirm: false,
+      showCancelButton: true,
+      confirmButtonText: 'Ajukan',
+      cancelButtonText: 'Batal',
+      confirmButtonColor: '#28a745',
+      cancelButtonColor: '#6c757d',
+      customClass: {
+        popup: 'swal-custom-width'
+      },
+      preConfirm: () => {
+        const popup = Swal.getPopup();
+        const nama = popup.querySelector('#swal-nama').value;
+        const nik = popup.querySelector('#swal-nik').value;
+        const alamat = popup.querySelector('#swal-alamat').value;
+        const jenis = popup.querySelector('#swal-jenis').value;
+
+        if (!nama || !nik || !alamat || !jenis) {
+          Swal.showValidationMessage('Mohon lengkapi semua data');
+          return false;
+        }
+
+        return { nama, nik, alamat, jenis };
+      }
+    }).then((result) => {
+      if (result.isConfirmed) {
+        const pengajuan = {
+          nama: result.value.nama,
+          nik: result.value.nik,
+          alamat: result.value.alamat,
+          jenisBantuan: result.value.jenis,
+          tanggal: new Date().toLocaleString()
+        };
+
+        const semuaPengajuan = JSON.parse(localStorage.getItem('pengajuanBansos') || '[]');
+        semuaPengajuan.push(pengajuan);
+        localStorage.setItem('pengajuanBansos', JSON.stringify(semuaPengajuan));
+
+        Swal.fire({
+          title: 'Berhasil!',
+          text: 'Permohonan bansos Anda telah diajukan.',
+          icon: 'success',
+          confirmButtonColor: '#28a745'
+        }).then(() => {
+          window.location.href = 'pengaduan.html';
+        });
+      }
+    });
+  } else {
+    // Kalau belum login
+    Swal.fire({
+      title: 'Login Diperlukan',
+      text: 'Silakan login terlebih dahulu sebelum mengajukan bansos.',
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonText: 'Login',
+      cancelButtonText: 'Batal',
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33'
+    }).then((result) => {
+      if (result.isConfirmed) {
+        window.location.href = 'login.html';
+      }
+    });
+  }
+});
+
+
+     const isLoggedIn = localStorage.getItem('loggedIn') === 'true';
+    const userAvatar = document.getElementById('userAvatar');
+    const loginOption = document.getElementById('loginOption');
+    const registerOption = document.getElementById('registerOption');
+    const profileOption = document.getElementById('profileOption');
+    const logoutOption = document.getElementById('logoutOption');
+
+    if (isLoggedIn) {
+      const userNIK = localStorage.getItem('userNIK');
+      const userName = localStorage.getItem('userName') || 'User';
+      userAvatar.src = 'assets/profile.png';
+      userAvatar.title = `${userName} (${userNIK})`;
+      loginOption.classList.add('d-none');
+      registerOption.classList.add('d-none');
+      profileOption.classList.remove('d-none');
+      logoutOption.classList.remove('d-none');
+    } else {
+      userAvatar.src = 'assets/profile.png';
+    }
+
+    // Tombol logout
+    logoutOption.querySelector('a').onclick = () => {
+      // Jangan hapus data login terakhir agar tetap bisa autofill
+      localStorage.removeItem('loggedIn');
+      localStorage.removeItem('userNIK');
+      localStorage.removeItem('userName');
+      location.reload();
+    };
+
+    const modal = document.getElementById("popupForm");
+  const openBtn = document.getElementById("openBtn");
+  const closeBtn = document.getElementById("closeBtn");
+
+  openBtn.onclick = () => modal.style.display = "flex";
+  closeBtn.onclick = () => modal.style.display = "none";
+  window.onclick = (e) => { if (e.target === modal) modal.style.display = "none"; };
+
+  // PRE-FILL NIK jika user login
+ document.addEventListener('DOMContentLoaded', () => {
+  const loggedIn = localStorage.getItem('loggedIn') === 'true';
+  const userNIK = localStorage.getItem('userNIK');
+  const userName = localStorage.getItem('userName');
+
+  if (loggedIn) {
+    if (userNIK) {
+      const nikField = document.getElementById('NIK');
+      nikField.value = userNIK;
+      nikField.readOnly = true;
+    }
+
+    if (userName) {
+      const namaField = document.getElementById('nama');
+      namaField.value = userName;
+      namaField.readOnly = true;
+    }
+  }
+});
+
+
+  // HANDLE SUBMIT PENGADUAN
+  const form = document.querySelector('#popupForm form');
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const loggedIn = localStorage.getItem('loggedIn') === 'true';
+    if (!loggedIn) {
+      alert("Silakan login terlebih dahulu sebelum mengirim pengaduan.");
+      window.location.href = 'login.html';  // Arahkan ke halaman utama
+      return;
+    }
+
+    const nik = document.getElementById('NIK').value.trim();
+    const kategori = document.getElementById('kategori').value;
+    const pesan = document.getElementById('pesan').value.trim();
+
+    const users = JSON.parse(localStorage.getItem('users') || '[]');
+    const user = users.find(u => u.nik === nik);
+    if (!user) {
+      alert("NIK Anda tidak terdaftar.");
+      return;
+    }
+
+    const pengaduan = {
+      nama: user.nama,
+      nik: nik,
+      kategori: kategori,
+      pesan: pesan,
+      tanggal: new Date().toLocaleString()
+    };
+
+    const semuaPengaduan = JSON.parse(localStorage.getItem('pengaduan') || '[]');
+    semuaPengaduan.push(pengaduan);
+    localStorage.setItem('pengaduan', JSON.stringify(semuaPengaduan));
+
+    window.location.href = 'pengaduan.html';
+  });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
